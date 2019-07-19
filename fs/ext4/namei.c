@@ -3000,7 +3000,7 @@ static struct buffer_head *ext4_get_first_dir_block(handle_t *handle,
  * Anybody can rename anything with this: the permission checks are left to the
  * higher-level routines.
  */
-static int ext4_rename(struct inode *old_dir, struct dentry *old_dentry,
+static int ext4_rename2(struct inode *old_dir, struct dentry *old_dentry,
 		       struct inode *new_dir, struct dentry *new_dentry)
 {
 	handle_t *handle;
